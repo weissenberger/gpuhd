@@ -1,6 +1,6 @@
 # CUHD - A Massively Parallel Huffman Decoder
 
-Huffman decoder for processing raw (i.e. unpartitioned) Huffman encoded data on the GPU. It also includes a basic, sequential encoder.
+A Huffman decoder for processing raw (i.e. unpartitioned) Huffman encoded data on the GPU. It also includes a basic, sequential encoder.
 
 For further information, please refer to our [conference paper](https://doi.org/10.1145/3225058.3225076).
 
@@ -18,11 +18,11 @@ For further information, please refer to our [conference paper](https://doi.org/
 
 Please edit the Makefile:
 
-1. set `CUDA_INCLUDE` to the include directory of your CUDA installation, e.g.: `CUDA_INCLUDE = /usr/local/cuda-9.1/include`
+1. Set `CUDA_INCLUDE` to the include directory of your CUDA installation, e.g.: `CUDA_INCLUDE = /usr/local/cuda-9.1/include`
 
-2. set `CUDA_LIB` to the library directory of your CUDA installation, e.g.: `CUDA_LIB = /usr/local/cuda-9.1/lib64`
+2. Set `CUDA_LIB` to the library directory of your CUDA installation, e.g.: `CUDA_LIB = /usr/local/cuda-9.1/lib64`
 
-3. change `ARCH` to the compute capability of your GPU, i.e. `ARCH = 35` for compute capability 3.5. If you'd like to compile the decoder for multiple generations of GPUs, please edit `NVCC_FLAGS` accordingly.
+3. Set `ARCH` to the compute capability of your GPU, i.e. `ARCH = 35` for compute capability 3.5. If you'd like to compile the decoder for multiple generations of GPUs, please edit `NVCC_FLAGS` accordingly.
 
 ### Test program
 
@@ -30,7 +30,7 @@ The test program will generate a chunk of random, binomially distributed data, e
 
 #### Compiling the test program
 
-To compile the test program, configure the Makefile as described above. Then, run:
+To compile the test program, configure the Makefile as described above. Run:
 
 `make`
 
